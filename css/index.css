@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -170,11 +170,18 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.banner {
+  width: 95%;
+  margin: 1% 2.5%;
+}
+.banner img {
+  width: 100%;
+}
 .home .intro h2 {
-  padding: 15px;
+  padding: 2%;
 }
 .home .intro p {
-  padding: 0 15px;
+  padding: 0 2%;
 }
 .home .space-images {
   display: flex;
@@ -188,7 +195,7 @@ footer {
   height: 100%;
 }
 .home .visit-planets {
-  padding: 15px;
+  padding: 2%;
 }
 .home .visit-planets h3 {
   margin-top: 11px;
@@ -199,7 +206,7 @@ footer {
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 3.5% 4%;
   display: flex;
   justify-content: center;
 }
