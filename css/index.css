@@ -160,6 +160,26 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+nav a {
+  font-size: 1.6rem;
+  color: #5e6164;
+  text-decoration: none;
+  padding: 1% 2%;
+  margin: 0 1%;
+}
+nav a:hover {
+  color: black;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -232,6 +252,7 @@ footer {
   cursor: pointer;
   font-family: "Russo One", sans-serif;
   background-color: #84878b;
+  color: #1d1f3b;
 }
 .home .walk .walk-img {
   width: 46%;
