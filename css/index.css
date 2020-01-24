@@ -134,15 +134,21 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    margin: 0 1%;
+  }
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -154,6 +160,11 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+}
+@media screen {
+  p {
+    font-size: 1.4rem;
+  }
 }
 .container {
   max-width: 800px;
@@ -203,6 +214,10 @@ footer {
     margin: 0;
     padding: 0;
   }
+  .banner img {
+    width: 105%;
+    margin-left: -2%;
+  }
 }
 .home .intro h2 {
   padding: 2%;
@@ -214,6 +229,19 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+}
+@media screen {
+  .home .space-images .blast {
+    width: 92%;
+    margin: 0;
+    padding: 0;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .space-images img {
   width: 28%;
