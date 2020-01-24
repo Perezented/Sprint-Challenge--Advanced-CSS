@@ -1,1 +1,21 @@
 // Mixins Here
+.butins(@width, @padding, @butincolor, @textcolor, @boldness) {
+    width: @width;
+    padding: @padding;
+    background-color: @butincolor;
+    color: @textcolor;
+    font-weight: @boldness;
+    text-align: center;
+    border-radius: 7%;
+    &:hover {
+        cursor: pointer;
+        font-family: "Russo One", sans-serif;
+        background-color: lighten(@shuttle-gray, 15%);
+    }
+}
+.flex-center(@direction, @width) {
+    display: flex;
+    justify-content: center;
+    flex-direction: @direction;
+    width: @width;
+}
