@@ -145,7 +145,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5E6164;
 }
 h1,
@@ -153,7 +153,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293B;
 }
 h2 {
@@ -167,7 +167,7 @@ p {
   line-height: 1.4;
 }
 .container {
-  max-width: 800px;
+  max-width: 80%;
   width: 100%;
   margin: 0 auto;
 }
@@ -209,6 +209,12 @@ footer {
 }
 .home .intro p {
   padding: 0 2%;
+}
+.home .intro .topBanner {
+  width: 100%;
+}
+.home .intro .topBanner img {
+  width: 100%;
 }
 .home .space-images {
   display: grid;
