@@ -1,5 +1,4 @@
 // Home Content
-.phoneChk();
 .home {
     .intro {
         h2 {
@@ -48,11 +47,7 @@
             margin-top: 2.5%;
         }
     }
-    @media @phone {
-        .walk {
-            flex-direction: column-reverse;
-        }
-    }
+
     .walk {
         border-top: 1px solid @main-border-color;
         display: flex;
@@ -92,6 +87,22 @@
                 width: 100%;
                 height: auto;
                 border-radius: 10px;
+            }
+        }
+    }
+    @media @phone {
+        .walk {
+            flex-direction: column-reverse;
+            .walk-text {
+                width: 100%;
+                button {
+                    width: 86%;
+                }
+            }
+            .walk-img {
+                .nothing();
+                width: 100%;
+                .padding();
             }
         }
     }
