@@ -165,7 +165,7 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  color: darkgrey;
+  color: rgba(0, 0, 0, 0.762);
 }
 @media (max-width: 500px) {
   p {
@@ -173,7 +173,8 @@ p {
   }
 }
 .container {
-  max-width: 80%;
+  background: linear-gradient(115deg, lightgrey, lightgrey, white, lightgrey, lightgrey, white, lightgrey);
+  max-width: 75%;
   width: 100%;
   margin: 0 auto;
 }
