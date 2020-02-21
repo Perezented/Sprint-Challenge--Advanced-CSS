@@ -41,19 +41,15 @@ Edit this document to include your answers after each question. Make sure to lea
 1. What is the difference between an adaptive website and a fully responsive website?
    \
     Adaptive will have a set breakpoint and will not scale as nicely as a Fully Responsive Site. FRS will scale with window sizes and fit most if not all screen.
-   \
 2. Describe what it means to be mobile first vs desktop first.
    \
     Desinging mobile site first vs desktop first.
-   \
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
    \
     Sets a universal 10px font per each rem
-   \
 4. How would you describe preprocessing to someone new to CSS?
    \
     HTML nesting but in CSS.
-   \
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
    \
     The nesting and keeping it neat if it's built just how the html page was built.
