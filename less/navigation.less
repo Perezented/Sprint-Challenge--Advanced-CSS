@@ -1,7 +1,6 @@
 // Navigation code here
 
 nav {
-    .bChk(blue);
     div {
         text-align: center;
         h1 {
@@ -10,14 +9,22 @@ nav {
         }
     }
     .links {
-        .bChk(red);
         width: 30%;
         margin: 0 auto 1%;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         .flex(space-between, center);
         a {
             color: grey;
             text-decoration: none;
+            .btnChnge(grey, white, scale(1.2));
+        }
+    }
+}
+@media @phone {
+    nav {
+        .links {
+            width: 85%;
+            padding: 3%;
         }
     }
 }

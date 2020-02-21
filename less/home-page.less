@@ -1,5 +1,5 @@
 // Home Content
-
+.phoneChk();
 .home {
     .intro {
         h2 {
@@ -11,8 +11,10 @@
         }
         .topBanner {
             width: 100%;
+
             img {
                 width: 100%;
+                border-radius: 6px;
             }
         }
     }
@@ -25,6 +27,13 @@
             width: 100%;
             border-radius: 20px;
             height: 100%;
+        }
+        @media @phone {
+            grid-template-columns: 1fr;
+            .sky,
+            .launch {
+                display: none;
+            }
         }
     }
 
@@ -39,7 +48,11 @@
             margin-top: 2.5%;
         }
     }
-
+    @media @phone {
+        .walk {
+            flex-direction: column-reverse;
+        }
+    }
     .walk {
         border-top: 1px solid @main-border-color;
         display: flex;
@@ -58,8 +71,9 @@
                 font-size: 2rem;
                 font-weight: 600;
                 letter-spacing: 3px;
-                background-color: grey;
-                .btnChnge(grey, white, scalex(3%));
+                background-color: @header-font-color;
+                transform: rotate(0turn);
+                .btnChnge(grey, white, tranform);
             }
             h3 {
                 margin-bottom: 10px;

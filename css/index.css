@@ -165,14 +165,22 @@ h3 {
 p {
   font-size: 1.6rem;
   line-height: 1.4;
+  color: darkgrey;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
 }
 .container {
   max-width: 80%;
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  border: 1px solid blue;
+@media (max-width: 500px) {
+  .container {
+    max-width: 95%;
+  }
 }
 nav div {
   text-align: center;
@@ -182,10 +190,9 @@ nav div h1 {
   padding: 1%;
 }
 nav .links {
-  border: 1px solid red;
   width: 30%;
   margin: 0 auto 1%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -193,6 +200,20 @@ nav .links {
 nav .links a {
   color: grey;
   text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+nav .links a:hover {
+  cursor: pointer;
+  color: grey;
+  background: white;
+  transform: scale(1.2);
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 500px) {
+  nav .links {
+    width: 85%;
+    padding: 3%;
+  }
 }
 footer {
   color: #22283B;
@@ -203,6 +224,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  body {
+    background-color: lightgreen;
+  }
 }
 .home .intro h2 {
   padding: 2%;
@@ -215,6 +241,7 @@ footer {
 }
 .home .intro .topBanner img {
   width: 100%;
+  border-radius: 6px;
 }
 .home .space-images {
   display: grid;
@@ -229,6 +256,15 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    grid-template-columns: 1fr;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 2% 0 5%;
 }
@@ -237,6 +273,11 @@ footer {
 }
 .home .visit-planets p {
   margin-top: 2.5%;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column-reverse;
+  }
 }
 .home .walk {
   border-top: 1px solid #dee2e6;
@@ -257,14 +298,15 @@ footer {
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: 3px;
-  background-color: grey;
+  background-color: #23293B;
+  transform: rotate(0turn);
   transition: 0.2s ease-in-out;
 }
 .home .walk .walk-text button:hover {
   cursor: pointer;
   color: grey;
   background: white;
-  transform: scalex(3%);
+  transform: tranform;
   transition: 0.2s ease-in-out;
 }
 .home .walk .walk-text h3 {
